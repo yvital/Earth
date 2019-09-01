@@ -16,7 +16,7 @@ window.onload = function(){
 	scene.add(ambient);
 
 	var geometry = new THREE.SphereGeometry( 1.3, 60, 60 );
-	var Texture = new THREE.TextureLoader().load('/img/earth.jpg');
+	var Texture = new THREE.TextureLoader().load('https://raw.githubusercontent.com/yvital/Earth/master/img/earth.jpg');
 	var material = new THREE.MeshLambertMaterial({ map: Texture, transparent: true, opacity: 0.5 });
 	material.depthWrite = false;
 	
